@@ -10,8 +10,22 @@ const Footer = () => {
 						<span className="font-bold text-xl text-primary">studiebnb</span>
 					</Link>
 				</div>
-				<div className="debug"></div>
 			</div>
+			<div className="flex justify-around w-full">
+				<div className="flex flex-col">
+					<Link to="">Home</Link>
+					<Link to="">Rooms</Link>
+					<Link to="">About Us</Link>
+					<Link to="">Contact</Link>
+				</div>
+				<div className="flex flex-col">
+					<Link to="">Home</Link>
+					<Link to="">Rooms</Link>
+					<Link to="">About Us</Link>
+					<Link to="">Contact</Link>
+				</div>
+			</div>
+
 			<hr />
 
 			<div className="flex md:flex-row flex-col gap-3 items-center justify-around mt-[20px]">

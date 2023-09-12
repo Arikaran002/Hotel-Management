@@ -6,7 +6,7 @@ const Header = () => {
 			<div className="w-full md:w-11/12 lg:w-10/12 flex flex-col md:flex-row items-center gap-[50px] justify-around md:my-10">
 				<div
 					data-aos="zoom-in-down"
-					className="flex flex-col gap-5 max-w-[400px] md:max-w-[500px] debug"
+					className="flex flex-col gap-5 max-w-[400px] md:max-w-[500px]"
 				>
 					<h1 className="font-bold uppercase text-2xl md:text-3xl text-center md:text-left">
 						Welcome to StudioBnB.

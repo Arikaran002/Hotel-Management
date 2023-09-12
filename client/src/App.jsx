@@ -14,7 +14,7 @@ import BookingsPage from './pages/account/BookingsPage';
 import BookingPage from './pages/booking/BookingPage';
 import AccountLayout from './layout/AccountLayout';
 
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 axios.defaults.withCredentials = true;
 
 function App() {

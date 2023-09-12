@@ -113,7 +113,7 @@ export default function ListingFormPage() {
 					<option value="single room">Single room</option>
 					<option value="apartment">Apartment</option>
 					<option value="guest house">Guest house</option>
-					<option value="louge">Louge</option>
+					<option value="lounge">lounge</option>
 					<option value="hall">Hall</option>
 				</select>
 				<label className="font-semibold inline-block my-2">Images</label>

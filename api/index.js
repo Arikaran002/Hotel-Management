@@ -35,8 +35,6 @@ app.use(
 // app.use(notFoundMiddleWare);
 // app.use(mongoDBError);
 
-
-
 function getUserDataFromReq(req) {
 	return new Promise((resolve, reject) => {
 		jwt.verify(req.cookies.token, jwtSecret, {}, async (err, userData) => {
