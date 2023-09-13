@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Search from './search';
+import Search from './Search';
 
 const Listing = () => {
 	const [data, setData] = useState([]);
