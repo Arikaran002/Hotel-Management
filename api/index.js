@@ -25,6 +25,7 @@ app.use(
 			'http://localhost:5173',
 			'http://localhost:3000',
 			'http://localhost:4000',
+			'https://i-lounge.vercel.app/',
 		],
 		credentials: true,
 	})
