@@ -7,7 +7,7 @@ const Testimonials = () => {
 	}, []);
 	return (
 		<section className="">
-			<div className='text-center w-full'>
+			<div className="text-center w-full">
 				<h2 className="text-xl my-2 font-bold text-primary">Testimonials</h2>
 				<h3 className="text-lg">What Our Guests Say</h3>
 			</div>
@@ -20,8 +20,8 @@ const Testimonials = () => {
 						<h2>James</h2>
 						<p>
 							We had an amazing stay at [Your Platform Name]. The staff was
-							courteous, and the rooms were comfortable. We'll definitely be
-							coming back!
+							courteous, and the rooms were comfortable. We&apos;ll definitely
+							be coming back!
 						</p>
 					</div>
 					<div

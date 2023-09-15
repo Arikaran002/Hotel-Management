@@ -6,7 +6,20 @@ const Section = () => {
 		Aos.init({ duration: 2000 });
 	}, []);
 	return (
-		<section className="md:flex justify-center">
+		<section id="about" className="py-4">
+			<div className="text-center">
+				<h2 className="uppercase p-1 text-primary text-center font-bold text-2xl">
+					About Us
+				</h2>
+				<div className="flex justify-center w-full md:max-w-md mx-auto">
+					<p>
+						At Ilouge, we take immense pride in curating a stay that redefines
+						luxury. We&apos;re dedicated to ensuring that when you leave our
+						premises, your perception of opulence will have been forever
+						elevated.
+					</p>
+				</div>
+			</div>
 			<div className=" py-[50px] left-0 right-0 p-2 rounded bg-transparent  flex flex-row justify-center px-[20px] ">
 				<div className="flex flex-col md:flex-row gap-[30px] justify-center">
 					<div
@@ -15,15 +28,14 @@ const Section = () => {
 					>
 						<div className="max-w-[150px]">
 							{/* <img src={sellImg} alt="" /> */}
-							<p>Selling</p>
+							<p>Reserve</p>
 						</div>
-						<h1 className="font-myfont capitalize text-[23px] md:text-[27px] ">
-							Buy a Home
-						</h1>
+						<h2 className="capitalize text-xl md:text-2xl ">
+							Book a Room
+						</h2>
 						<p className="font-fonty text-[15px] md:text-[17px] ">
-							Find your dream homw with an amazing photo experience and the most
-							listings and this include things that you won&apos;t find
-							anywhere.
+							We have created seamless online experience. You can find all kinds
+							of house that is available for renting at the affordable price.
 						</p>
 					</div>
 					<div
@@ -34,12 +46,13 @@ const Section = () => {
 							{/* <img src={rentImg} alt="" /> */}
 							<p>Rent</p>
 						</div>
-						<h1 className="font-myfont capitalize text-[23px] md:text-[27px] ">
-							Rent a home
-						</h1>
+						<h2 className="capitalize text-xl md:text-2xl ">
+							Rent an Apartment
+						</h2>
 						<p className="font-fonty text-[15px] md:text-[17px] ">
-							We have created seamless online experience. You can find all kinds
-							of house that is available for renting at the affordable price.
+							Find your dream home with an amazing photo experience and the most
+							listings and this include things that you won&apos;t find
+							anywhere.
 						</p>
 					</div>
 					<div
@@ -48,14 +61,15 @@ const Section = () => {
 					>
 						<div className="max-w-[150px]">
 							{/* <img src={buyImg} alt="" /> */}
-							<p>Buying</p>
+							<p>Listing</p>
 						</div>
-						<h1 className="font-myfont capitalize text-[23px] md:text-[27px] ">
-							Sell a home
-						</h1>
+						<h2 className="capitalize text-xl md:text-2xl ">
+							List your house
+						</h2>
 						<p className="font-fonty text-[15px] md:text-[17px] ">
-							We have made selling of home easy for those that wish to sell
-							their home. With our agents and workers is now easier .
+							We have made listing your house easy for those that wish to. With
+							one click, our agent verify your house and you start making money
+							from it.
 						</p>
 					</div>
 				</div>

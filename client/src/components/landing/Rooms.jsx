@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Listing = () => {
+const Rooms = () => {
 	const [listings, setListings] = useState([]);
 	useEffect(() => {
 		axios.get('/listings').then((response) => {
@@ -12,11 +12,11 @@ const Listing = () => {
 	return (
 		<section className="px-4 py-4">
 			<div className="flex justify-center mb-4">
-				<h1 className="uppercase p-1 text-primary text-center font-bold text-2xl ">
-					List Your Property with Us
-				</h1>
+				<h2 className="uppercase p-1 text-primary text-center font-bold text-2xl">
+					Our Rooms and Listings
+				</h2>
 			</div>
-			<div className="py-2 my-2 text-center">
+			<div className="flex justify-center w-full md:max-w-md mx-auto text-center">
 				<p>
 					List you property and get benefits such as reaching a wider audience,
 					easy booking management, and potential for higher income.
@@ -54,11 +54,13 @@ const Listing = () => {
 						</Link>
 					))}
 			</div>
-			<div>
-				<Link to="register">Get Started</Link>
+			<div className="flex justify-center text-primary">
+				<Link to="/rooms" className="hover:text-primary/20">
+					More rooms
+				</Link>
 			</div>
 		</section>
 	);
 };
 
-export default Listing;
+export default Rooms;

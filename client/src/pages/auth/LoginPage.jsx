@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import axios from 'axios';
 import { UserContext } from '../../UserContext';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
 
 export default function LoginPage() {
 	const navigate = useNavigate();
@@ -13,6 +14,10 @@ export default function LoginPage() {
 
 	async function loginUser(e) {
 		e.preventDefault();
+		toast.dismiss();
+		if (!email || !password) {
+			return toast.error('Invalid email or password');
+		}
 		setLoading(true);
 		true;
 		try {
@@ -20,17 +25,17 @@ export default function LoginPage() {
 				email,
 				password,
 			});
-			alert('Login successful');
+			toast.success('Login successful');
 			setUser(data);
 			setLoading(false);
 			navigate('/');
 		} catch (error) {
 			setLoading(false);
 			if (error.response && error.response.status === 401) {
-				alert('Invalid email or password');
+				toast.error('Invalid email or password');
 			} else {
 				console.log(error);
-				alert('Login failed');
+				toast.error('Login failed');
 			}
 		}
 	}

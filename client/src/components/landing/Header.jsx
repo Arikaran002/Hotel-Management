@@ -12,9 +12,7 @@ const Header = () => {
 						Welcome to StudioBnB.
 					</h1>
 					<p className="text-sm md:text-lg capitalize leading-4">
-						Discover your dream home with HOME BUILDER Your Gateway to
-						Exceptional Properties. We are your trusted partner in the exciting
-						journey of finding the perfect place to call your own
+						Your Gateway to Luxury and Comfort
 					</p>
 					<div className="flex flex-row gap-2 justify-center">
 						<NavLink
