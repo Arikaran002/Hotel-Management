@@ -22,7 +22,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(
 	cors({
 		origin: [
-			'https://i-lounge.vercel.app/',
+			'https://i-lounge.vercel.app',
 			'http://localhost:5173',
 			'http://localhost:3000',
 			'http://localhost:4000',
@@ -46,7 +46,7 @@ function getUserDataFromReq(req) {
 }
 
 app.get('/', async (req, res) => {
-	res.status(200).json({ data: 'Welcome, Api is ok' });
+	res.status(200).json({ data: 'Welcome to Ilounge, Api is ok' });
 });
 app.post('/register', async (req, res) => {
 	const { name, email, password } = req.body;
