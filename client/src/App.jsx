@@ -13,7 +13,7 @@ import ListingPage from './pages/listing/ListingPage';
 import BookingsPage from './pages/account/BookingsPage';
 import BookingPage from './pages/booking/BookingPage';
 import AccountLayout from './layout/AccountLayout';
-import Rooms from './components/landing/Rooms';
+import Rooms from './pages/rooms/Rooms';
 
 axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 axios.defaults.withCredentials = true;

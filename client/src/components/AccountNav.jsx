@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { UserContext } from '../UserContext';
 import UserImg from '../assets/userImage.png';
 import { menuLinks } from '../Data';
-import reduceName from '../hooks/reduceName';
+import reduceName from '../hooks/reduceWord';
 
 export default function AccountNav({ setOpen }) {
 	const { pathname } = useLocation();

@@ -16,7 +16,7 @@ const Listing = () => {
 					List Your Property with Us
 				</h1>
 			</div>
-			<div className="py-2 my-2 text-center">
+			<div className="flex justify-center w-full md:max-w-xl mx-auto text-center">
 				<p>
 					List you property and get benefits such as reaching a wider audience,
 					easy booking management, and potential for higher income.

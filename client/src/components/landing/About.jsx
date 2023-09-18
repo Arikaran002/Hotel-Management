@@ -8,10 +8,10 @@ const Section = () => {
 	return (
 		<section id="about" className="py-4">
 			<div className="text-center">
-				<h2 className="uppercase p-1 text-primary text-center font-bold text-2xl">
+				<h2 className="uppercase p-1 text-primary text-center font-bold text-xl">
 					About Us
 				</h2>
-				<div className="flex justify-center w-full md:max-w-md mx-auto">
+				<div className="flex justify-center w-full md:max-w-xl mx-auto text-center leading-6">
 					<p>
 						At Ilouge, we take immense pride in curating a stay that redefines
 						luxury. We&apos;re dedicated to ensuring that when you leave our
@@ -30,9 +30,7 @@ const Section = () => {
 							{/* <img src={sellImg} alt="" /> */}
 							<p>Reserve</p>
 						</div>
-						<h2 className="capitalize text-xl md:text-2xl ">
-							Book a Room
-						</h2>
+						<h2 className="capitalize text-xl md:text-2xl ">Book a Room</h2>
 						<p className="font-fonty text-[15px] md:text-[17px] ">
 							We have created seamless online experience. You can find all kinds
 							of house that is available for renting at the affordable price.
@@ -63,9 +61,7 @@ const Section = () => {
 							{/* <img src={buyImg} alt="" /> */}
 							<p>Listing</p>
 						</div>
-						<h2 className="capitalize text-xl md:text-2xl ">
-							List your house
-						</h2>
+						<h2 className="capitalize text-xl md:text-2xl ">List your house</h2>
 						<p className="font-fonty text-[15px] md:text-[17px] ">
 							We have made listing your house easy for those that wish to. With
 							one click, our agent verify your house and you start making money

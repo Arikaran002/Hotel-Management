@@ -6,7 +6,7 @@ import Search from './Search';
 const Listing = () => {
 	const [data, setData] = useState([]);
 	const [listings, setListings] = useState([]);
-	const [number, setNumber] = useState(2);
+	const [number, setNumber] = useState(20);
 	useEffect(() => {
 		axios.get('/listings').then((response) => {
 			setData([...response.data]);
@@ -46,9 +46,9 @@ const Listing = () => {
 	};
 	return (
 		<section className="px-4 py-4">
-			<div className="md:flex justify-between mb-4 ">
+			<div className="md:flex justify-between mb-4">
 				<h1 className="uppercase p-1 text-primary text-center font-bold text-2xl ">
-					New Listings
+					Top Listings
 				</h1>
 				<Search onSearch={onSearch} />
 			</div>
